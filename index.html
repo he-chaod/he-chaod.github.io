@@ -250,6 +250,247 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
+                <a class="post-title-link" href="/project/2022/11/20/undefined/" itemprop="url">流程控制语句</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-11-20T11:52:11+08:00">
+                2022-11-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="一、流程控制语句"><a href="#一、流程控制语句" class="headerlink" title="一、流程控制语句"></a>一、流程控制语句</h3><blockquote>
+<ul>
+<li>顺序语句</li>
+<li>分支语句<ul>
+<li>if分支</li>
+<li>switch选择</li>
+</ul>
+</li>
+<li>循环语句<ul>
+<li>for循环</li>
+<li>while循环</li>
+<li>do while循环</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="二、简单if分支语句"><a href="#二、简单if分支语句" class="headerlink" title="二、简单if分支语句"></a>二、简单if分支语句</h3><blockquote>
+<p>简单的if分支<br>                语法：<br>                    if(逻辑条件(boolean类型)){<br>                        满足逻辑条件执行的代码<br>                    }	</p>
+</blockquote>
+<blockquote>
+<p>案例：如果成绩大于90，奖励豪华作业题一套			</p>
+<p>案例：如果年龄大于65，可以领取养老金</p>
+<p>案例：如果身高大于180，且体重小于180,就可以当模特		</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//案例1：如果成绩大于90，奖励豪华作业题一套	</span></span><br><span class="line">System.out.println(<span class="string">&quot;请输入你的成绩&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">score</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line"><span class="keyword">if</span>(score &gt; <span class="number">90</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;奖励豪华作业题一套&quot;</span>);</span><br><span class="line">&#125;		</span><br><span class="line">System.out.println(<span class="string">&quot;执行吗？&quot;</span>);		</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//案例2：如果年龄大于65，可以领取养老金</span></span><br><span class="line">System.out.println(<span class="string">&quot;请输入你的年龄&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line"><span class="keyword">if</span>(age &gt;= <span class="number">65</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;领取养老金&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//案例3：如果身高大于180，且体重小于180,就可以当模特		</span></span><br><span class="line">System.out.println(<span class="string">&quot;请输入你的身高&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">height</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">System.out.println(<span class="string">&quot;请输入你的体重&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">weight</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(height &gt; <span class="number">180</span> &amp;&amp; weight &lt; <span class="number">180</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;可以当模特&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="三、if…else分支"><a href="#三、if…else分支" class="headerlink" title="三、if…else分支"></a>三、if…else分支</h3><blockquote>
+<p>语法：<br>                    if(逻辑条件){<br>                        满足逻辑条件执行的代码<br>                    }else{<br>                        不满足逻辑条件执行的代码<br>                    }</p>
+</blockquote>
+<blockquote>
+<p>案例：如果用户名为admin、密码为123456，则跳转首页，否则跳转登录页面</p>
+<p>案例：如果身上余额大于100元。中午吃饭加个鸡腿，否则泡面</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//案例：如果用户名为admin、密码为123456，则跳转首页，否则跳转登录页面</span></span><br><span class="line">System.out.println(<span class="string">&quot;请输入用户名&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">username</span> <span class="operator">=</span> sc.next();</span><br><span class="line">System.out.println(<span class="string">&quot;请输入密码&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">password</span> <span class="operator">=</span> sc.next();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(username.equals(<span class="string">&quot;admin&quot;</span>) &amp;&amp; password.equals(<span class="string">&quot;123456&quot;</span>))&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;跳转首页&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;跳转登录页面&quot;</span>);</span><br><span class="line">&#125;		</span><br><span class="line"></span><br><span class="line"><span class="comment">//案例：如果身上余额大于100元。中午吃饭加个鸡腿，否则泡面</span></span><br><span class="line">System.out.println(<span class="string">&quot;请输入你的余额&quot;</span>);</span><br><span class="line"><span class="type">double</span> <span class="variable">money</span> <span class="operator">=</span> sc.nextDouble();</span><br><span class="line"><span class="keyword">if</span>(money &gt; <span class="number">100</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;加个鸡腿&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;泡面&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="四、多重if分支"><a href="#四、多重if分支" class="headerlink" title="四、多重if分支"></a>四、多重if分支</h3><blockquote>
+<p>语法：<br>                    if(逻辑条件1){<br>                        满足逻辑条件1执行的代码<br>                    }else if(逻辑条件2){ &#x2F;&#x2F;隐藏条件(不满足条件1)<br>                        满足逻辑条件2执行的代码<br>                    }else if(逻辑条件3){ &#x2F;&#x2F;隐藏条件(不满足条件1、2)<br>                        满足逻辑条件3执行的代码<br>                    }else{<br>                        不满足以上所有逻辑条件执行的代码<br>                    }</p>
+</blockquote>
+<blockquote>
+<p>案例：<br>                根据手上的余额选择购买的手机品牌<br>                如果大于10000,  买个苹果<br>                如果大于7000, 买个华为<br>                如果大于5000,买个小米<br>                如果大于3000,买个诺基亚<br>                否则,去打公共电话</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;请输入余额&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">money</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line"><span class="keyword">if</span>(money &gt; <span class="number">10000</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;苹果手机&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(money &gt; <span class="number">7000</span>)&#123; <span class="comment">//money &lt;= 10000</span></span><br><span class="line">    System.out.println(<span class="string">&quot;华为手机&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(money &gt; <span class="number">5000</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;小米手机&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(money &gt; <span class="number">3000</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;诺基亚手机&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;打公共电话&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="五、嵌套if分支"><a href="#五、嵌套if分支" class="headerlink" title="五、嵌套if分支"></a>五、嵌套if分支</h3><blockquote>
+<p>嵌套if分支	<br>                语法：<br>                    if(逻辑条件1){<br>                        if(逻辑条件2){<br>                            满足逻辑条件1且满足条件2执行的代码<br>                        }else{<br>                            满足逻辑条件1但不满足条件2执行的代码<br>                        }<br>                    }else{<br>                        不满足逻辑条件1执行的代码<br>                    }</p>
+</blockquote>
+<blockquote>
+<p>案例：</p>
+<p>学校举行跑步比赛，如果成绩在15秒以内，可以进入决赛，男的进入男子组决赛，女的进入女子组决赛</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//学校举行跑步比赛，如果成绩在15秒以内，可以进入决赛，男的进入男子组决赛，女的进入女子组决赛</span></span><br><span class="line">System.out.println(<span class="string">&quot;请输入你的比赛成绩&quot;</span>);</span><br><span class="line"><span class="type">double</span> <span class="variable">score</span> <span class="operator">=</span> sc.nextDouble();</span><br><span class="line"><span class="keyword">if</span>(score &lt; <span class="number">15</span>)&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;请输入你的性别&quot;</span>);</span><br><span class="line">    <span class="type">String</span> <span class="variable">sex</span> <span class="operator">=</span> sc.next();</span><br><span class="line">    <span class="keyword">if</span>(sex.equals(<span class="string">&quot;男&quot;</span>))&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;恭喜进入男子组&quot;</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;恭喜进入女子组&quot;</span>);</span><br><span class="line">    &#125;			</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;很遗憾你被淘汰了！！！&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="六、分支语句细节"><a href="#六、分支语句细节" class="headerlink" title="六、分支语句细节"></a>六、分支语句细节</h3><blockquote>
+<p>注意1：			<br>                在java中 &#x3D;&#x3D; 比较的是内存地址，String类的equals比较的是内容<br>                基本数据类型使用&#x3D;&#x3D;比较。<br>                String类型使用equals比较</p>
+<p>注意2：<br>            在if分支中，大括号可以省略不写，但是如果不写大括号，那么这个if分支只能控制一行代码<br>            你不要这么写</p>
+<p>注意3：<br>        多重if中要将苛刻条件写前面	</p>
+</blockquote>
+<h3 id="七、-switch分支"><a href="#七、-switch分支" class="headerlink" title="七、 switch分支"></a>七、 switch分支</h3><h4 id="7-1-switch分支使用"><a href="#7-1-switch分支使用" class="headerlink" title="7.1 switch分支使用"></a>7.1 switch分支使用</h4><blockquote>
+<p>选择分支结构：<br>                switch中的值：byte short int char String 枚举类型<br>                switch(值){<br>                    case 值1:<br>                        switch中的值与值1相等时候执行的代码<br>                        break;<br>                    case 值2:<br>                        switch中的值与值2相等时候执行的代码<br>                        break;<br>                    case 值3:<br>                        switch中的值与值3相等时候执行的代码<br>                        break;<br>                    case 值4:<br>                        switch中的值与值4相等时候执行的代码<br>                        break;<br>                    default:<br>                        switch中的值与以上所有值都不相等时候执行的代码<br>                        break;<br>                }	</p>
+</blockquote>
+<blockquote>
+<p>案例：<br>                选择1:查询操作<br>                选择2:增加操作<br>                选择3:删除操作<br>                选择4:修改操作<br>                选择5:退出系统<br>                选择其他：提示输入有误</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;请输入你的选择&quot;</span>);</span><br><span class="line"><span class="type">int</span> <span class="variable">option</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line"><span class="keyword">switch</span>(option)&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;查询操作&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;增加操作&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;删除操作&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;修改操作&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;退出系统&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>: </span><br><span class="line">        System.out.println(<span class="string">&quot;输入有误&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="7-2-switch分支细节"><a href="#7-2-switch分支细节" class="headerlink" title="7.2 switch分支细节"></a>7.2 switch分支细节</h4><blockquote>
+<ul>
+<li>switch使用细节：<ul>
+<li>1、在switch中值的类型：byte short int char String 枚举类型</li>
+<li>2、在switch中case值不允许重复</li>
+<li>3、在switch中break表示结束当前switch语句<ul>
+<li>break可以省略不写，如果省略那么switch会一直往下执行，直到遇到下一个break;</li>
+</ul>
+</li>
+<li>4、switch和多重if的区别：<ul>
+<li>多重if中可以做关系运算，在swtich中只能做等值判断</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>案例:（要求选择A和a是一样的结果）<br>                选择A: 好评<br>                选择B: 一般<br>                选择C: 良好<br>                选择D: 差评	</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;请输入你的选择&quot;</span>);</span><br><span class="line"><span class="type">String</span> <span class="variable">option</span> <span class="operator">=</span> sc.next();</span><br><span class="line"><span class="keyword">switch</span>(option)&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;a&quot;</span>:				</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;A&quot;</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;好评&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;b&quot;</span>:				</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;B&quot;</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;一般&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;c&quot;</span>:				</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;C&quot;</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;良好&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;d&quot;</span>:				</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;D&quot;</span>:</span><br><span class="line">        System.out.println(<span class="string">&quot;差评&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="八、-随堂练习"><a href="#八、-随堂练习" class="headerlink" title="八、 随堂练习"></a>八、 随堂练习</h3><blockquote>
+<ul>
+<li><p>简单if、if…else练习</p>
+<ul>
+<li>1、输入年龄，如果年龄大于18周岁，输出可以进入网吧上网</li>
+<li>2、输入一个年份，判断这个年份是否是闰年，如果是输出闰年，如果不是输出平年</li>
+<li>3、如果java成绩大于90且sql成绩大于85，或者音乐成绩等于100且语文大于95，<br>输出奖励一个 华为手机。否则输出晚自习增加一个小时</li>
+</ul>
+</li>
+<li><p>多重if、嵌套if练习</p>
+<ul>
+<li>1、如果成绩大于90  优秀<br>                                   80   良好<br>                                                          70   中等<br>                                                          60   及格<br>                                                        小于60  不及格</li>
+<li>2、商场做活动，满300可以打折，会员打8折，非会员打9折，输出消费金额</li>
+</ul>
+<p>	</p>
+</li>
+<li><p>switch练习</p>
+<ul>
+<li>1、定义一个季节，打印这个季节有哪几个月</li>
+<li>2、输入月份，打印这个月份是什么季节</li>
+<li>3、把之前做的90优秀这个题用switch实现</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://he-chaod.github.io/project/project/2022/11/20/undefined/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/project/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhshc">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
                 <a class="post-title-link" href="/project/2022/11/20/undefined/" itemprop="url">Java变量、数据类型、运算符</a></h1>
         
 
@@ -1084,7 +1325,7 @@
               
                 <a href="/project/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
