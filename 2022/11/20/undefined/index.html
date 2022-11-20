@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/project/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/project/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/project/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/project/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/project/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/project/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/project/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="title:软件开发一、软件开发1.1 什么是程序？ 模拟现实世界，解决现实问题，使用编程语言编写的指令的集合  1.2 计算机编程语言   编程语言 应用领域    Java Web开发、桌面应用程序开发、Android、大数据   C 嵌入式方向、与硬件结合的开发   C++ 游戏开发   C# Web开发，主要基于.net平台   Python Web开发、数据挖掘、人工智能   PHP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Zhshc">
+<meta property="og:url" content="https://he-chaod.github.io/project/2022/11/20/undefined/index.html">
+<meta property="og:site_name" content="Zhshc">
+<meta property="og:description" content="title:软件开发一、软件开发1.1 什么是程序？ 模拟现实世界，解决现实问题，使用编程语言编写的指令的集合  1.2 计算机编程语言   编程语言 应用领域    Java Web开发、桌面应用程序开发、Android、大数据   C 嵌入式方向、与硬件结合的开发   C++ 游戏开发   C# Web开发，主要基于.net平台   Python Web开发、数据挖掘、人工智能   PHP">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://he-chaod.github.io/project/image%5Cimage-20220104145706311.png">
+<meta property="og:image" content="https://he-chaod.github.io/project/image%5Cimage-20220104173408729.png">
+<meta property="og:image" content="https://he-chaod.github.io/project/image%5Cimage-20220104174927643.png">
+<meta property="og:image" content="https://he-chaod.github.io/project/image%5Cimage-20220104175003835.png">
+<meta property="og:image" content="https://he-chaod.github.io/project/image%5Cimage-20220105094901351.png">
+<meta property="og:image" content="https://he-chaod.github.io/project/image%5Cimage-20220105094943040.png">
+<meta property="article:published_time" content="2022-11-20T02:48:43.766Z">
+<meta property="article:modified_time" content="2022-11-20T02:57:46.392Z">
+<meta property="article:author" content="hc">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://he-chaod.github.io/project/image%5Cimage-20220104145706311.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://he-chaod.github.io/project/2022/11/20/undefined/"/>
+
+
+
+
+
+  <title> | Zhshc</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/project/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Zhshc</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/project/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/project/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://he-chaod.github.io/project/project/2022/11/20/undefined/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/project/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhshc">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-11-20T10:48:43+08:00">
+                2022-11-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<h2 id="title-软件开发"><a href="#title-软件开发" class="headerlink" title="title:软件开发"></a>title:软件开发</h2><h3 id="一、软件开发"><a href="#一、软件开发" class="headerlink" title="一、软件开发"></a>一、软件开发</h3><h4 id="1-1-什么是程序？"><a href="#1-1-什么是程序？" class="headerlink" title="1.1 什么是程序？"></a>1.1 什么是程序？</h4><blockquote>
+<p>模拟现实世界，解决现实问题，使用<code>编程语言</code>编写的<code>指令</code>的集合</p>
+</blockquote>
+<h4 id="1-2-计算机编程语言"><a href="#1-2-计算机编程语言" class="headerlink" title="1.2 计算机编程语言"></a>1.2 计算机编程语言</h4><table>
+<thead>
+<tr>
+<th>编程语言</th>
+<th>应用领域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Java</td>
+<td><code>Web开发</code>、桌面应用程序开发、Android、大数据</td>
+</tr>
+<tr>
+<td>C</td>
+<td>嵌入式方向、与硬件结合的开发</td>
+</tr>
+<tr>
+<td>C++</td>
+<td>游戏开发</td>
+</tr>
+<tr>
+<td>C#</td>
+<td>Web开发，主要基于.net平台</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>Web开发、数据挖掘、人工智能</td>
+</tr>
+<tr>
+<td>PHP</td>
+<td>Web开发</td>
+</tr>
+<tr>
+<td>Go</td>
+<td>运维方向、区块链</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>前端开发</td>
+</tr>
+</tbody></table>
+<h3 id="二、开发环境搭建-重点"><a href="#二、开发环境搭建-重点" class="headerlink" title="二、开发环境搭建(重点)"></a>二、开发环境搭建(重点)</h3><blockquote>
+<ul>
+<li>JDK安装与卸载以及环境变量配置</li>
+<li>NotePad++安装与使用(第一周写代码、Eclipse、IDEA)</li>
+<li>Typora安装与使用(笔记软件)</li>
+<li>参考资料:<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1iB4y127JK?spm_id_from=333.999.0.0">https://www.bilibili.com/video/BV1iB4y127JK?spm_id_from=333.999.0.0</a></li>
+</ul>
+</blockquote>
+<blockquote>
+<p>练习：JDK至少重装一遍</p>
+</blockquote>
+<h3 id="三、Java基础入门"><a href="#三、Java基础入门" class="headerlink" title="三、Java基础入门"></a>三、Java基础入门</h3><h4 id="3-1-Java简介-掌握"><a href="#3-1-Java简介-掌握" class="headerlink" title="3.1 Java简介(掌握)"></a>3.1 Java简介(掌握)</h4><blockquote>
+<ul>
+<li><p>Sun Microsystems于1995年推出的面向对象的程序设计语言，共同创始人的詹姆斯·高斯林 (James Gosling)被誉为“Java之父”。</p>
+<ul>
+<li>1996年发布JDK 1.0</li>
+</ul>
+</li>
+<li><p>1998年发布JDK 1.2 </p>
+<ul>
+<li>平台名称：J2SE(Stadard Edition)、J2EE(Enterprise Edition)、J2ME(Micro Edition)</li>
+</ul>
+</li>
+<li><p>2004年发布JDK 1.5 版本更名：Java 5.0</p>
+</li>
+<li><p>平台名称：Java SE、Java EE、Java ME</p>
+</li>
+<li><p>2006年发布Java 6.0</p>
+</li>
+<li><p>2009年被Oracle收购</p>
+</li>
+<li><p>2011年由Oracle发布Java 7.0</p>
+</li>
+<li><p>2014年由Oracle发布Java 8.0</p>
+</li>
+<li><p>2017年由Oracle发布Java 9.0</p>
+</li>
+<li><p>2019年由Oracle发布Java 14.0</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads">https://www.oracle.com/java/technologies/downloads</a></p>
+</blockquote>
+<h4 id="3-2-Java语言特点-了解"><a href="#3-2-Java语言特点-了解" class="headerlink" title="3.2 Java语言特点(了解)"></a>3.2 Java语言特点(了解)</h4><blockquote>
+<ul>
+<li>面向对象</li>
+<li>跨平台(一处编译，到处执行)</li>
+<li>安全性高</li>
+<li>简单性</li>
+<li>多线程</li>
+<li>……….</li>
+</ul>
+</blockquote>
+<h4 id="3-3-第一个Java程序-重点"><a href="#3-3-第一个Java程序-重点" class="headerlink" title="3.3 第一个Java程序(重点)"></a>3.3 第一个Java程序(重点)</h4><h5 id="3-3-1-编写源代码"><a href="#3-3-1-编写源代码" class="headerlink" title="3.3.1 编写源代码"></a>3.3.1 编写源代码</h5><blockquote>
+<ul>
+<li>新建一个.java结尾文件</li>
+<li>在文件中编写代码</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;Hello,world!!&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;你好,世界!!&quot;</span>);		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-3-2-编译源代码"><a href="#3-3-2-编译源代码" class="headerlink" title="3.3.2 编译源代码"></a>3.3.2 编译源代码</h5><blockquote>
+<ul>
+<li>在代码的文件夹上直接输入cmd进入dos窗口</li>
+<li>输入<code>javac  HelloWorld.java</code></li>
+</ul>
+</blockquote>
+<h5 id="3-3-3-运行程序"><a href="#3-3-3-运行程序" class="headerlink" title="3.3.3 运行程序"></a>3.3.3 运行程序</h5><blockquote>
+<ul>
+<li>在DOS窗口中输入 <code>java  类名</code></li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">运行测试</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/project/image%5Cimage-20220104145706311.png" alt="image-20220104145706311"></td>
+</tr>
+</tbody></table>
+<h4 id="3-4-编程语言分类-了解"><a href="#3-4-编程语言分类-了解" class="headerlink" title="3.4 编程语言分类(了解)"></a>3.4 编程语言分类(了解)</h4><blockquote>
+<ul>
+<li>编译型语言<ul>
+<li>将代码一次性编译成编译器能翻译的文件格式(执行效率高，不可跨平台。)</li>
+</ul>
+</li>
+<li>解释型语言<ul>
+<li>逐行翻译逐行执行(执行效率低，可以跨平台)</li>
+</ul>
+</li>
+<li>Java是一门编译加解释型语言。先编译、再解释。首先Java源代码通过Java编译工具一次性将源代码编译成.class(字节码文件)，然后再通过Java虚拟机(JVM)逐行翻译逐行执行</li>
+</ul>
+</blockquote>
+<h4 id="3-5-Java专有名词介绍-记忆"><a href="#3-5-Java专有名词介绍-记忆" class="headerlink" title="3.5 Java专有名词介绍(记忆)"></a>3.5 Java专有名词介绍(记忆)</h4><blockquote>
+<p>JDK: （Java Development Kit）开发环境：包含JRE + 类库 + 开发工具包（编译器+调试工具）。</p>
+<p>JRE:（Java Runtime Environment）运行环境：包含JVM和解释器，完整的Java运行环境。</p>
+<p>JVM: （Java Virtual Machine）虚拟机：使用软件在不同操作系统中，模拟相同的环境。</p>
+</blockquote>
+<h4 id="3-6-Java中类的概念（了解）"><a href="#3-6-Java中类的概念（了解）" class="headerlink" title="3.6 Java中类的概念（了解）"></a>3.6 Java中类的概念（了解）</h4><blockquote>
+<p>类：是java程序中最小的组成单元，一个java程序由若干个类组成</p>
+<p>public修饰的类：表示是一个主类，主类的的类名必须与文件名保持一致(区分大小写)</p>
+<p>一个java文件中可以编写多个类(但是只有一个类能够使用public修饰)。</p>
+<p>建议：目前学习阶段，一个java文件就写一个java类，且使用public修饰</p>
+</blockquote>
+<h4 id="3-7-Java编程规范-（掌握）"><a href="#3-7-Java编程规范-（掌握）" class="headerlink" title="3.7 Java编程规范 （掌握）"></a>3.7 Java编程规范 （掌握）</h4><h5 id="3-7-1-代码缩进"><a href="#3-7-1-代码缩进" class="headerlink" title="3.7.1 代码缩进"></a>3.7.1 代码缩进</h5><blockquote>
+<p>每一个层级的代码使用tab键(制表位)进行间隔</p>
+<p>shift+tab键表示回退一个制表位</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">One</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;hello,java&quot;</span>);</span><br><span class="line">	&#125;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-7-2-注释"><a href="#3-7-2-注释" class="headerlink" title="3.7.2 注释"></a>3.7.2 注释</h5><blockquote>
+<ul>
+<li><a href="">单行注释    &#x2F;&#x2F; 注释内容</a><ul>
+<li>应用场景：对一行代码的解释</li>
+</ul>
+</li>
+<li><a href="">多行注释   &#x2F;* <em>注释内容</em> *&#x2F;</a><ul>
+<li>应用场景：对一段代码的解释</li>
+</ul>
+</li>
+<li><a href="">文档注释  &#x2F;** <em>注释内容</em> *&#x2F;</a><ul>
+<li>应用场景：对整个类|方法的解释</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">	作者：威哥</span></span><br><span class="line"><span class="comment">	时间：xxxx年xx月xx日 12:12:12</span></span><br><span class="line"><span class="comment">	描述：这是一个入门程序</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">		方法的作用：这是程序的入口</span></span><br><span class="line"><span class="comment">		方法的参数：</span></span><br><span class="line"><span class="comment">		方法的返回值：	</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="comment">//这行代码的含义是在控制台输出内容</span></span><br><span class="line">		System.out.println(<span class="string">&quot;注释.....&quot;</span>);		</span><br><span class="line">		<span class="comment">/*</span></span><br><span class="line"><span class="comment">			以下这段代码的功能是</span></span><br><span class="line"><span class="comment">			打印输出一个三角形		</span></span><br><span class="line"><span class="comment">		*/</span></span><br><span class="line">		System.out.println(<span class="string">&quot;.&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;..&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;...&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;....&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;.....&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="四、计算机基础-了解"><a href="#四、计算机基础-了解" class="headerlink" title="四、计算机基础(了解)"></a>四、计算机基础(了解)</h3><h4 id="4-1-计算机单位"><a href="#4-1-计算机单位" class="headerlink" title="4.1 计算机单位"></a>4.1 计算机单位</h4><blockquote>
+<p>8 Bit(位)   ——   1024 Byte(字节)   —–  1024 KB(千字节)  —– 1024  MB(兆)    —– 1024 GB      —– 1024 TB</p>
+<p>PB    EB   ZB    YB    BB   NB    DB    CB   XB</p>
+<p><a href="">别苦闷国土配额资源不能动次序</a></p>
+</blockquote>
+<h4 id="4-2-常用的dos命令"><a href="#4-2-常用的dos命令" class="headerlink" title="4.2 常用的dos命令"></a>4.2 常用的dos命令</h4><blockquote>
+<p>DOS窗口就是windows操作系统前身</p>
+<p>打开DOS窗口：WIN+R      再输入cmd</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C:   D:   E:</td>
+<td>切换盘符</td>
+</tr>
+<tr>
+<td>cd  目录路径</td>
+<td>目录切换</td>
+</tr>
+<tr>
+<td>cd  .</td>
+<td>表示当前目录</td>
+</tr>
+<tr>
+<td>cd ..</td>
+<td>表示上一级目录</td>
+</tr>
+<tr>
+<td>cd  &#x2F;</td>
+<td>回退到当前盘符的根目录</td>
+</tr>
+<tr>
+<td>tab</td>
+<td>自动补全</td>
+</tr>
+<tr>
+<td>dir</td>
+<td>查看当前目录下所有的文件和文件夹</td>
+</tr>
+<tr>
+<td>上下键</td>
+<td>快速查看之前输入过的命令</td>
+</tr>
+<tr>
+<td>ipconfig</td>
+<td>查看当前电脑的ip地址</td>
+</tr>
+<tr>
+<td>ctrl+C</td>
+<td>强制停止当前命令</td>
+</tr>
+<tr>
+<td>ping  ip地址</td>
+<td>测试连接是否与目标主机互通</td>
+</tr>
+<tr>
+<td>mkdir  文件夹名称</td>
+<td>创建文件夹</td>
+</tr>
+<tr>
+<td>rmdir  文件夹名称</td>
+<td>删除文件夹</td>
+</tr>
+<tr>
+<td>echo  内容 &gt; 文件名</td>
+<td>创建文件并写入内容</td>
+</tr>
+<tr>
+<td>echo  内容 &gt;&gt; 文件名</td>
+<td>创建文件并写入内容(可追加)</td>
+</tr>
+<tr>
+<td>calc</td>
+<td>打开计算器</td>
+</tr>
+<tr>
+<td>notepad</td>
+<td>打开记事本</td>
+</tr>
+<tr>
+<td>mspaint</td>
+<td>打开画图工具</td>
+</tr>
+</tbody></table>
+<h4 id="4-3-计算机中的进制转换"><a href="#4-3-计算机中的进制转换" class="headerlink" title="4.3 计算机中的进制转换"></a>4.3 计算机中的进制转换</h4><blockquote>
+<ul>
+<li>二进制</li>
+<li>八进制</li>
+<li>十进制</li>
+<li>十六进制</li>
+</ul>
+</blockquote>
+<h5 id="4-3-1-二进制和十进制转换"><a href="#4-3-1-二进制和十进制转换" class="headerlink" title="4.3.1 二进制和十进制转换"></a>4.3.1 二进制和十进制转换</h5><table>
+<thead>
+<tr>
+<th align="center">二进制和十进制转换</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/project/image%5Cimage-20220104173408729.png" alt="image-20220104173408729"></td>
+</tr>
+</tbody></table>
+<h5 id="4-3-2-二进制和八进制转换"><a href="#4-3-2-二进制和八进制转换" class="headerlink" title="4.3.2 二进制和八进制转换"></a>4.3.2 二进制和八进制转换</h5><table>
+<thead>
+<tr>
+<th align="center">二进制和八进制转换</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/project/image%5Cimage-20220104174927643.png" alt="image-20220104174927643"></td>
+</tr>
+</tbody></table>
+<h5 id="4-3-3-二进制和十六进制转换"><a href="#4-3-3-二进制和十六进制转换" class="headerlink" title="4.3.3 二进制和十六进制转换"></a>4.3.3 二进制和十六进制转换</h5><table>
+<thead>
+<tr>
+<th align="center">二进制和十六进制转换</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/project/image%5Cimage-20220104175003835.png" alt="image-20220104175003835"></td>
+</tr>
+</tbody></table>
+<h5 id="4-3-4-负数的二进制"><a href="#4-3-4-负数的二进制" class="headerlink" title="4.3.4 负数的二进制"></a>4.3.4 负数的二进制</h5><table>
+<thead>
+<tr>
+<th align="center">负数的二进制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/project/image%5Cimage-20220105094901351.png" alt="image-20220105094901351"></td>
+</tr>
+</tbody></table>
+<h5 id="4-3-5-小数的二进制"><a href="#4-3-5-小数的二进制" class="headerlink" title="4.3.5 小数的二进制"></a>4.3.5 小数的二进制</h5><table>
+<thead>
+<tr>
+<th align="center">小数的二进制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/project/image%5Cimage-20220105094943040.png" alt="image-20220105094943040"></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/project/2022/11/20/undefined/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/project/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91"><span class="nav-number">1.</span> <span class="nav-text">title:软件开发</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91"><span class="nav-number">1.1.</span> <span class="nav-text">一、软件开发</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-%E4%BB%80%E4%B9%88%E6%98%AF%E7%A8%8B%E5%BA%8F%EF%BC%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 什么是程序？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 计算机编程语言</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E9%87%8D%E7%82%B9"><span class="nav-number">1.2.</span> <span class="nav-text">二、开发环境搭建(重点)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81Java%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8"><span class="nav-number">1.3.</span> <span class="nav-text">三、Java基础入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-Java%E7%AE%80%E4%BB%8B-%E6%8E%8C%E6%8F%A1"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 Java简介(掌握)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-Java%E8%AF%AD%E8%A8%80%E7%89%B9%E7%82%B9-%E4%BA%86%E8%A7%A3"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 Java语言特点(了解)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F-%E9%87%8D%E7%82%B9"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 第一个Java程序(重点)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-1-%E7%BC%96%E5%86%99%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">3.3.1 编写源代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-2-%E7%BC%96%E8%AF%91%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">3.3.2 编译源代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-3-%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.3.3.3.</span> <span class="nav-text">3.3.3 运行程序</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%88%86%E7%B1%BB-%E4%BA%86%E8%A7%A3"><span class="nav-number">1.3.4.</span> <span class="nav-text">3.4 编程语言分类(了解)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-Java%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D%E4%BB%8B%E7%BB%8D-%E8%AE%B0%E5%BF%86"><span class="nav-number">1.3.5.</span> <span class="nav-text">3.5 Java专有名词介绍(记忆)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6-Java%E4%B8%AD%E7%B1%BB%E7%9A%84%E6%A6%82%E5%BF%B5%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="nav-number">1.3.6.</span> <span class="nav-text">3.6 Java中类的概念（了解）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-7-Java%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83-%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="nav-number">1.3.7.</span> <span class="nav-text">3.7 Java编程规范 （掌握）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-7-1-%E4%BB%A3%E7%A0%81%E7%BC%A9%E8%BF%9B"><span class="nav-number">1.3.7.1.</span> <span class="nav-text">3.7.1 代码缩进</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-7-2-%E6%B3%A8%E9%87%8A"><span class="nav-number">1.3.7.2.</span> <span class="nav-text">3.7.2 注释</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80-%E4%BA%86%E8%A7%A3"><span class="nav-number">1.4.</span> <span class="nav-text">四、计算机基础(了解)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8D%95%E4%BD%8D"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.1 计算机单位</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-%E5%B8%B8%E7%94%A8%E7%9A%84dos%E5%91%BD%E4%BB%A4"><span class="nav-number">1.4.2.</span> <span class="nav-text">4.2 常用的dos命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E7%9A%84%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.4.3.</span> <span class="nav-text">4.3 计算机中的进制转换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-1-%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%92%8C%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">4.3.1 二进制和十进制转换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-2-%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%92%8C%E5%85%AB%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">4.3.2 二进制和八进制转换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-3-%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%92%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.4.3.3.</span> <span class="nav-text">4.3.3 二进制和十六进制转换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-4-%E8%B4%9F%E6%95%B0%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6"><span class="nav-number">1.4.3.4.</span> <span class="nav-text">4.3.4 负数的二进制</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-5-%E5%B0%8F%E6%95%B0%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6"><span class="nav-number">1.4.3.5.</span> <span class="nav-text">4.3.5 小数的二进制</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">hc</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/project/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/project/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/project/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/project/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/project/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/project/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/project/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/project/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/project/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/project/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/project/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
